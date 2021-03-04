@@ -1,6 +1,10 @@
 // toDoList
 const addAufgabe = require ('./add');
 
+const doneAufgabe = require ('./doneFunction')
+
+const korrigiereAufgabe = require ('./korrigierteFunc')
+
 const toDoList = [
     {
       aufgabe: "einfaufen",
@@ -31,6 +35,30 @@ const toDoList = [
       addAufgabe(toDoList, neueAufgabe);
       console.log(toDoList);
     }
+
+
+    if (answer == 2)
+    {
+      const erledigt = prompt("done ! : ");
+      
+      doneAufgabe(toDoList, erledigt);
+      console.log(toDoList);
+    }
+
+
+    if (answer == 3)
+    {
+      const choice = prompt("Which toDo do you want to edit? : ");
+      const neu = prompt("What is the True : ");
+      
+      korrigiereAufgabe(toDoList, choice,neu);
+      console.log(toDoList);
+    }
+
+
+
+
+
 
   }
 
