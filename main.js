@@ -31,3 +31,5 @@ const toDoList = [
     }
 
   }
+
+const addAufgabe = require ('./add');
