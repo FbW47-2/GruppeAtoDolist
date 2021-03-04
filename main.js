@@ -1,4 +1,6 @@
 // toDoList
+const addAufgabe = require ('./add');
+
 const toDoList = [
     {
       aufgabe: "einfaufen",
@@ -32,4 +34,4 @@ const toDoList = [
 
   }
 
-const addAufgabe = require ('./add');
+
