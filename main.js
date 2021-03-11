@@ -57,7 +57,7 @@ const toDoList = [
       
       
       
-       if (answer == 4)
+    if (answer == 4)
     {
       const deleteAufgabe = prompt("Welche Aufgabe möchten Sie löschen? : ");
   
