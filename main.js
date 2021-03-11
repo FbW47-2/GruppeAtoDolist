@@ -54,6 +54,17 @@ const toDoList = [
       korrigiereAufgabe(toDoList, choice,neu);
       console.log(toDoList);
     }
+      
+      
+      
+       if (answer == 4)
+    {
+      const deleteAufgabe = prompt("Welche Aufgabe möchten Sie löschen? : ");
+  
+      
+      deleteTask(toDoList,deleteAufgabe);
+      console.log(toDoList);
+    }
 
 
 
