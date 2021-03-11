@@ -10,6 +10,7 @@ Grundfunktionen, die auf jeden Fall vorhanden sein sollten:
 - Add a Todo (hinzufügen)
 - Mark a Todo as done (abhaken)
 - Edit a Todo (editieren)
+- Delete a Todo (löschen)
 
 Steps:
 
@@ -18,24 +19,8 @@ Steps:
 3. Programmiert die benötigten Klassen/Funktionen // beschäftigt euch selber mit der Funktionsweise von Local Storage (temporärer Speicherung)
 4. Erstellt das Design eurer ToDo-Liste und verknüpft die Funktionalität ´mit dem Design (DOM-Manipulation) ...
 
-```js
-const toDoList = [
-    { 
-        aufgabe: "einfaufen",
-        erledigt: false
-    },
-    {
-        aufgabe: "sport machen",
-        erledigt: false
-    }
+Ein am Terminal ausgeführtes toDoList-Projekt wurde abgeschlossen. 
 
-]
+Alle Funktionen wurden in separate Dateien geschrieben und exportiert. 
 
-console.log(toDoList.length);
-
-toDoList.push({
-    aufgabe: "schlafen",
-    erledigt: false
-});
-
-console.log(toDoList);
+Es wurde dann in die Datei main.js importiert und alle Funktionen wurden in der Datei main.js aufgerufen.
