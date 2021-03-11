@@ -1,9 +1,11 @@
 // toDoList
 const addAufgabe = require ('./add');
 
-const doneAufgabe = require ('./doneFunction')
+const doneAufgabe = require ('./doneFunction');
 
-const korrigiereAufgabe = require ('./korrigierteFunc')
+const korrigiereAufgabe = require ('./korrigierteFunc');
+
+const deleteTask = require ('./remove')
 
 const toDoList = [
     {
