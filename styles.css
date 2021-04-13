@@ -1,0 +1,151 @@
+h1 {
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background: #debbff;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.new {
+    display: flex;
+}
+
+.addButton {
+    flex-basis: 50px;
+    flex-grow: 0;
+    background: #e96363;
+    border: none;
+    box-shadow: 2px 3px 3px grey;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 15px;
+    margin-left: 5px;
+}
+
+.newTaskInput {
+    flex-grow: 1;
+    box-shadow: 2px 3px 3px grey;
+    padding: 10px;
+    border-radius: 0;
+    border: none;
+    outline: none;
+}
+
+.list {
+    margin: 0;
+    padding: 20px 10px;
+    list-style-type: none;
+}
+
+.list li {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+    box-shadow: 1px 1px 2px grey;
+    margin-bottom: 3px;
+    background: #ebd6ff;
+    transition: all 0.5s;
+}
+
+.list li:hover {
+    background: #c4acdb;
+}
+
+.check {
+    width: 15px;
+    height: 15px;
+    border: 3px solid #bb73ff;
+    background: white;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.check.done ~ .task {
+    text-decoration: line-through;
+}
+
+.check.done::after {
+    display: block;
+    content: "\f00c";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Font Awesome 5 Free";
+    font-weight: bold;
+    color: red;
+    font-size: 15px;
+}
+
+.task {
+    flex-grow: 1;
+    background: none;
+    border: none;
+    margin-right: 10px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.task:focus {
+    outline: 1px solid #bb73ff;
+    background: white;;
+}
+
+.edit {
+    background: none;
+    cursor: pointer;
+    border: none;
+    margin-right: 5px;
+    padding: 5px;
+    outline: none;
+}
+
+.edit::before {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    content: "\f044";
+    color: red;
+    font-size: 16px;
+}
+
+.edited::before {
+    content: "\f14a";
+}
+
+.delete {
+    flex-basis: 20px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 5px;
+    outline: none;
+}
+
+.delete::before {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    content: "\f057";
+    color: red;
+    font-size: 16px;
+}
+
+
+
