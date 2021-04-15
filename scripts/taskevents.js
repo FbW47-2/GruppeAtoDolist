@@ -45,6 +45,11 @@ function editTask(editedTask, editButton)
 function deleteTask(taskElement)
 {
     taskElement.remove();
+
+    if (document.querySelector(".list>li") === null)
+    {
+        document.querySelector(".no-tasks").classList.remove("yes-tasks");
+    }
 }
 
 export { taskEvents, editTask }

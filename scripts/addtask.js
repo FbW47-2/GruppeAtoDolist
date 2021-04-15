@@ -19,6 +19,8 @@ function addTask(newTaskInput, tasksList)
     addItemToDom("button", "delete", "no-value", "no-attribute", listElement);
     
     tasksList.prepend(listElement);
+
+    document.querySelector(".no-tasks").classList.add("yes-tasks");
 }
 
 function addItemToDom(itemName, itemClass, value, attribute, parentItem)

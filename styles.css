@@ -1,13 +1,24 @@
+body {
+    height: 100vh;
+    background: linear-gradient( rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.8) ), url(./images/love-4089493_1920.jpg) top center;
+    font-family: 'Roboto', sans-serif;
+}
+
 h1 {
     text-align: center;
+    color: rgb(226, 226, 226);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
 }
 
 .container {
     width: 80%;
     margin: 0 auto;
     background: #debbff;
-    padding: 20px;
+    padding: 30px 20px;
     font-size: 20px;
+    opacity: 0.9;
+    border-radius: 15px;
 }
 
 .new {
@@ -25,10 +36,13 @@ h1 {
     font-weight: bold;
     padding: 5px 15px;
     margin-left: 5px;
+    border-radius: 5px;
 }
 
 .addButton:hover {
     cursor: pointer;
+    background: red;
+    transition: all 0.5s;
 }
 
 .newTaskInput {
@@ -38,6 +52,7 @@ h1 {
     border-radius: 0;
     border: none;
     outline: none;
+    border-radius: 5px;
 }
 
 .list {
@@ -149,6 +164,18 @@ h1 {
     content: "\f057";
     color: red;
     font-size: 16px;
+}
+
+.no-tasks {
+    display: block;
+    text-align: center;
+    color: #e96363;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.yes-tasks {
+    display: none;
 }
 
 
