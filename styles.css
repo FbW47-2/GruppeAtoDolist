@@ -27,6 +27,10 @@ h1 {
     margin-left: 5px;
 }
 
+.addButton:hover {
+    cursor: pointer;
+}
+
 .newTaskInput {
     flex-grow: 1;
     box-shadow: 2px 3px 3px grey;
